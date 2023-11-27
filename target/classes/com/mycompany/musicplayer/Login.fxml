@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="782.0" prefWidth="1509.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.musicplayer.LoginController">
+   <children>
+      <ImageView fitHeight="854.0" fitWidth="1579.0" layoutY="-10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/background%20login.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="291.0" fitWidth="364.0" layoutX="354.0" layoutY="153.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/m2.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="exit_btn" layoutX="28.0" layoutY="31.0" onMouseClicked="#HandleClose" prefHeight="35.0" prefWidth="37.0" styleClass="login_button" stylesheets="@../../../styles/style.css" text=" X " textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="404.0" layoutY="444.0" prefHeight="76.0" prefWidth="169.0" text="eSound." textFill="#55b8ff">
+         <font>
+            <Font name="Cambria Bold" size="40.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="828.0" layoutY="71.0" prefHeight="598.0" prefWidth="504.0" styleClass="signin_background" stylesheets="@../../../styles/style.css">
+         <children>
+            <Label layoutX="178.0" layoutY="51.0" prefHeight="54.0" prefWidth="130.0" text="Sign In" textFill="WHITE">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <Button fx:id="register_btn" layoutX="65.0" layoutY="489.0" mnemonicParsing="false" onMouseClicked="#Register" prefHeight="43.0" prefWidth="373.0" styleClass="login_button" stylesheets="@../../../styles/style.css" text="Don't You Have Account? Register Now.">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="login_btn" layoutX="194.0" layoutY="394.0" mnemonicParsing="false" onMouseClicked="#Login" prefHeight="43.0" prefWidth="98.0" styleClass="login_button" stylesheets="@../../../styles/style.css" text="Log In">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <TextField fx:id="username" layoutX="262.0" layoutY="218.0" prefHeight="27.0" prefWidth="149.0" promptText=" UserName/Email" styleClass="text_field" stylesheets="@../../../styles/style.css" />
+            <Label layoutX="93.0" layoutY="210.0" prefHeight="43.0" prefWidth="140.0" text="Username :" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="24.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="password" layoutX="262.0" layoutY="296.0" prefHeight="27.0" prefWidth="149.0" promptText="   Password" styleClass="text_field" stylesheets="@../../../styles/style.css" />
+            <Label layoutX="93.0" layoutY="288.0" prefHeight="43.0" prefWidth="149.0" text="Password :" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
